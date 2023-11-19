@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+.nav ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.logo{
+    font-size: 35px;
+}
+
+div.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    padding: 120px;
+}
+
+div.content h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 45px;
+    color: #fe7777;
+    
+}
+
+span{
+    color: aquamarine;
+}
+
+div.content h3{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #fffc32;
+}
+
+div.content h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    color: #30b7ff;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px
+}
+
+button{
+    padding: 10px;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn1{
+    background-color: aliceblue;
+}
+
+.btn2{
+    background-color: aqua;
+}
+
+.main{
+    text-align: center;
+}
+
+div.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+div.more{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+div.add{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+div.ttl h1{
+    font-size: 45px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    padding: 20px;
+}
+
+div.cards h2{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+}
+
+div.cards{
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 100px;
+    background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+    border-radius: 10px;
+    color: #fff;
+}
+
+div.all{
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+}
+
+
+
+div.footer{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Poppins";
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    /* Start of Nav */
+    .nav{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .logo{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .nav ul li a{
+        font-size: 11px;
+    }
+
+    /* End of Nav */
+
+/* Start of Container */
+
+.content, .btn{
+    flex-direction: column;
+}
+
+div.main h1{
+    font-size: 35px;
+}
+
+div.main h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    color:aqua;
+}
+
+div.container, div.more, div.add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*End of Container */
+
+}
